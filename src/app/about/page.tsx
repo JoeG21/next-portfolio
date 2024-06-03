@@ -1,14 +1,7 @@
 "use client"
 
-// import { LampContainer } from "@/components/ui/lamp";
-// import { Lamp } from "lucide-react";
 import Image from "next/image";
-// import Pic from "@/../public/profile.png"
-import Pic from '../../../public/profile.png'
-
 import React from 'react'
-import Link from "next/link";
-import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { Icon } from "@/components/ui/evervault-card";
 
 export default function About() {

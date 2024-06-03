@@ -18,7 +18,6 @@ const createIcon = (src: string, alt: string) => (
 );
 
 const navItems = [
-  { name: "Home", link: "/", icon: createIcon("/home.svg", "Home") },
   { name: "About", link: "/#about", icon: createIcon("/user.svg", "About") },
   { name: "Projects", link: "/#projects", icon: createIcon("/code.svg", "Project") },
   { name: "Contact", link: "/#contact", icon: createIcon("/email.svg", "Contact") }
