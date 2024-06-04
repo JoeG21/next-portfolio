@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import React from 'react'
+import React from "react"
 import { Icon } from "@/components/ui/evervault-card";
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
           </div>
 
           <div className="bg-[#252422] p-4 text-[#CCC5B9] text-lg">
-            <h2 className="text-[#F2F4F3] text-2xl mt-4 mb-2 sm:text-4xl">Hi, I'm Joe</h2>
+            <h2 className="text-[#F2F4F3] text-2xl mt-4 mb-2 sm:text-4xl">Hi, I&apos;m Joe</h2>
             <p>
               My passion for technology began with my first family PC, playing a weird SpongeBob game.
               I was so captivated by how everything on the screen was reactive,
@@ -36,11 +36,11 @@ export default function About() {
             </p>
             <p className="my-2">
               Then I enrolled in Flatiron School, which kicked off my tech career.
-              Since then, I've been grateful for all the opportunities programming has given me.
+              Since then, I&apos;ve been grateful for all the opportunities programming has given me.
               It has led to immense fulfillment and growth, both in my career and personally.
             </p>
             <p>
-              Through this journey, the most important lesson I've learned and
+              Through this journey, the most important lesson I&apos;ve learned and
               hold true to is <em>always feel comfortable being uncomfortable.</em>
             </p>
           </div>

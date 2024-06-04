@@ -5,7 +5,7 @@ import About from "./about/page";
 import Projects from "./projects/page";
 import Head from "next/head";
 
-console.log('hello :)')
+console.log("hello :)")
 
 export default function Home() {
   return (
