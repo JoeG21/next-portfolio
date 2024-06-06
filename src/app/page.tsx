@@ -3,19 +3,13 @@
 import { SparklesCore } from "@/components/ui/sparkles";
 import About from "./about/page";
 import Projects from "./projects/page";
-import Head from "next/head";
 
 console.log("hello :)")
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center text-[#F2F4F3]">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        {/* Optional: Add other meta tags here */}
-        <title>Your Website Title</title>
-      </Head>
-      <div className="h-[95vh] w-full bg-black flex flex-col items-center justify-center overflow-hidden">
+      <div className="h-[80vh] w-full bg-black flex flex-col items-center justify-center overflow-hidden">
         <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-[#F2F4F3] relative z-20">
           Welcome
         </h1>
@@ -43,7 +37,6 @@ export default function Home() {
 
       <About />
       <Projects />
-
     </main>
   );
 }

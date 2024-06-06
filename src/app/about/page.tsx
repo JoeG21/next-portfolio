@@ -7,7 +7,7 @@ import { Icon } from "@/components/ui/evervault-card";
 export default function About() {
   return (
     <>
-      <section id="about">
+      <section id="about" className="max-w-[95rem]">
         <div className="border border-white/[0.75] flex flex-col max-w-sm mx-auto relative sm:max-w-full xl:flex-row sm:mx-16">
           <Icon className="absolute h-12 w-12 -top-6 -left-6 text-white" />
           <Icon className="absolute h-12 w-12 -bottom-6 -left-6 text-white" />
