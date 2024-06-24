@@ -1,16 +1,32 @@
 import React from "react";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Link from "next/link";
+import Image from "next/image";
 import { Project } from "@/data/projects";
 
 const ProjectCard: React.FC<Project> = ({ title, description, iframeSrc, githubLink, techStack }) => (
     <div className="flex justify-center my-8 mx-4">
         <BackgroundGradient className="rounded-[22px] max-w-sm p-4 bg-[#252422] sm:h-full">
-            <iframe
-                src={iframeSrc}
-                className="rounded-lg w-full"
-                title={title}
-            />
+            <div className="h-[150px]">
+                {title === 'Right Space Self Storage LLC' ?
+                    <div className="w-full h-full">
+                        <Image
+                            src="/rightSpace.png"
+                            alt="Description of image"
+                            width={600}
+                            height={400}
+                            className="rounded-lg w-full h-full"
+                        />
+                    </div>
+                    :
+                    <iframe
+                        src={iframeSrc}
+                        className="rounded-lg w-full"
+                        title={title}
+                    />
+                }
+            </div>
+
             <h2 className="text-xl text-[#F2F4F3] mt-4 mb-2">{title}</h2>
             <div className="sm:h-96 sm:relative">
                 <p className="mb-4 text-lg text-[#CCC5B9]">{description}</p>
@@ -22,7 +38,7 @@ const ProjectCard: React.FC<Project> = ({ title, description, iframeSrc, githubL
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                GitHub
+                                {title === 'Right Space Self Storage LLC' ? 'Website' : 'GitHub'}
                             </a>
                         </Link>
                     </div>
@@ -37,7 +53,6 @@ const ProjectCard: React.FC<Project> = ({ title, description, iframeSrc, githubL
                                 {tech}
                             </span>
                         ))}
-
                     </div>
                 </div>
             </div>
@@ -54,6 +69,7 @@ const getTechColor = (tech: string): string => {
         Ruby: "#b62727",
         jQuery: "#2e33ca",
         Bootstrap: "#582cd0",
+        PHP: "#5e49ff"
     };
     return colors[tech] || "#CCC5B9"; // Default color if not found
 };

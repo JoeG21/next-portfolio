@@ -7,7 +7,16 @@ export interface Project {
     techStack: string[];
 }
 
+import rightSpace from 'public/rightSpace.png'
+
 export const projects: Project[] = [
+    {
+        title: "Right Space Self Storage LLC",
+        description: "Right Space is Dubai's leading self-storage provider, renowned for exceptional customer service and state-of-the-art facilities featuring climate control and high security. Offering scalable solutions for both personal and business storage, along with a range of value-added services.",
+        iframeSrc: '/rightSpace.png',
+        githubLink: "https://rightspaceme.com/",
+        techStack: ["PHP", "jQuery", "JavaScript"],
+    },
     {
         title: "Astrascapes, LCC",
         description: "Created with JavaScript and React, utilizing hooks and Email.js to establish communication through the contact form for customers. Designed with CSS and Material-UI, and implemented media queries for responsiveness to all screen sizes. Hosted on Netlify.",
